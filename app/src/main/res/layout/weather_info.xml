@@ -99,8 +99,9 @@
                 android:textSize="15.0sp" />
 
             <!-- 温度信息 -->
+            <!--
             <TextView
-                android:id="@+id/temperature"
+                android:id="@+id/temperature_add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -110,6 +111,7 @@
                 android:text="温度:4C"
                 android:textColor="@android:color/white"
                 android:textSize="15.0sp" />
+                -->
 
             <!-- 湿度信息 -->
             <TextView
@@ -117,7 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@id/temperature"
+                android:layout_below="@id/time"
                 android:layout_marginLeft="15.0dip"
                 android:singleLine="true"
                 android:text="湿度:57%"
@@ -183,7 +185,7 @@
 
                 <!-- PM2.5污染等级 -->
                 <TextView
-                    android:id="@+id/pm2_5_quaility"
+                    android:id="@+id/pm2_5_quality"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -226,7 +228,7 @@
 
                 <!-- 温度范围 -->
                 <TextView
-                    android:id="@+id/temperature_range"
+                    android:id="@+id/temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/week_today"
@@ -242,7 +244,7 @@
                     android:id="@+id/climate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/temperature_range"
+                    android:layout_below="@id/temperature"
                     android:layout_marginLeft="5.0dip"
                     android:layout_toRightOf="@id/weather_img"
                     android:singleLine="true"
