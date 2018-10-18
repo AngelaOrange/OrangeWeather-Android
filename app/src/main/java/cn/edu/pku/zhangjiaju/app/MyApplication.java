@@ -3,14 +3,17 @@ package cn.edu.pku.zhangjiaju.app;
 import android.app.Application;
 import android.util.Log;
 import android.os.Environment;
+
 import java.io.File;
 import java.io.InputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import cn.edu.pku.zhangjiaju.db.CityDB;
+
 import cn.edu.pku.zhangjiaju.cn.edu.pku.zhangjiaju.bean.City;
+import cn.edu.pku.zhangjiaju.db.CityDB;
+
 
 public class MyApplication extends Application {
     private static final String TAG = "MyAPP";
@@ -23,7 +26,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.d(TAG,"MyApplictaion->Oncreate");
+        Log.d(TAG,"MyApplictaion -> Oncreate");
 
         mApplication = this;
         mCityDB = openCityDB();
