@@ -62,6 +62,7 @@ public class MyApplication extends Application {
     }
 
     public List<City> getCityList() {
+
         return mCityList;
     }
 
